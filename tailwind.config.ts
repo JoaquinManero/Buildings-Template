@@ -7,11 +7,19 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      display: ["Poppins", "sans-serif"],
+    },
+
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "#3368C0",
+        secondary: "#EEF4FF",
+        background: "#F7FAFF",
+        darkBlue: "#1B4282",
+        lightBlue: "#BDD6FF",
+        dimBlue: "#F7FAFF",
+        overlayBg: "rgba(0,0,0,0.3)",
       },
     },
   },

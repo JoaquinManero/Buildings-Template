@@ -1,6 +1,27 @@
+import React from "react";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Stats from "@/components/Stats";
+import OurServices from "@/components/OurServices";
+import OurWork from "@/components/OurWork";
+import Testimonials from "@/components/Testimonials";
+import CallToAction from "@/components/CallToAction";
 import "@/styles/globals.css";
-import type { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const App = () => {
+  return (
+    <div className="bg-background">
+      <Navbar />
+      <Hero />
+      <Stats />
+      <OurServices />
+      <OurWork />
+      <Testimonials />
+      <CallToAction />
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
